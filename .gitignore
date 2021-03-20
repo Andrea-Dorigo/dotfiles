@@ -6,3 +6,4 @@
 !bin/**
 !.zshrc
 !.zsh/**
+!.config/kitty/**
