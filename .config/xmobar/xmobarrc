@@ -1,0 +1,37 @@
+Config { font = "xft:FiraCode Nerd Font Mono:weight=medium:pixelsize=11:antialias=true:hinting=true"
+       , additionalFonts = ["xft:FontAwesome 5 Free:weight=900:size=9","xft:FontAwesome 5 Free:weight=900:size=9"]
+       , borderColor = "#FFFFFF"
+       , border = NoBorder
+       , bgColor = "#2A313E"
+       , fgColor = "#90BEBD"
+       , alpha = 255
+       , position = Static { xpos = 20 , ypos = 10, width = 1880, height = 22 }
+       , textOffset = 15
+       , textOffsets = [16,15]
+       , iconOffset = 0
+       , lowerOnStart = True
+       , pickBroadest = False
+       , persistent = False
+       , hideOnStart = False
+       , iconRoot = "."
+       , allDesktops = True
+       , overrideRedirect = True
+       , commands = [ Run Wireless "" ["-t","<fn=2>\xf1eb</fn> <ssid>"] 10
+                    , Run DynNetwork ["-t","<rx> <tx>","-S","True"] 10
+                    , Run Cpu ["-t","<fn=1>\xf2db</fn> <total>%","-L","3","-H","50","--high","red"] 20
+                    , Run Memory ["-t","<fn=1>\xf538</fn> <usedratio>%"] 20
+                    , Run DiskU [("/", "<fn=1>\xf0a0</fn> <used>"), ("-d","1"), ("sda5", "<usedbar>")]
+                                ["-L", "20", "-H", "50", "-m", "1", "-p", "3", "-d", "1"]
+                                 600
+                    , Run Date "<fn=2>\xf783</fn> %A %b %_d" "date" 600
+                    , Run Date "<fn=1>\xf017</fn> %I:%M %p" "time" 50
+                    , Run Com "/bin/sh" ["-c", "~/bin/weather.sh" ] "customweather" 50
+                    , Run StdinReader
+                    , Run Volume "default" "Master" ["-t", "<fn=1>\xf028</fn> <volume>% <status>", "--","-C","#5af78e"] 10
+                    ]
+       , sepChar = "%"
+     }
+       , alignSep = "}{"
+       , template = "    <fc=#f3f99d>%cpu%</fc> | <fc=#f3f99d>%memory%</fc> | <fc=#f3f99d>%disku%</fc> |  <fc=#ff6ac1>%wi%</fc> |  <fc=#5af78e>%default:Master%</fc> | %StdinReader% }\
+                    \ <fc=#9aedfe>%time%</fc> \
+                    \{ <fc=#9aedfe>%dynnetwork%</fc> | <fc=#ff5c57>%date%</fc> | <fc=#57c7ff>%customweather%</fc>    "
