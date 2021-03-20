@@ -1,0 +1,37 @@
+/* html > body {
+ zoom: 80%;
+} */
+
+/* DUCKDUCKGO */
+.results-ads, #ads,
+body.body--serp .results--sidebar {
+ display: none;
+}
+body.body--serp #header-wrapper,
+body.body--serp #header {
+ text-align:center;
+}
+body.body--serp #header {
+ width: 100%;
+}
+body.body--serp .header__search-wrap,
+body.body--serp #duckbar,
+body.body--serp .results--main  {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+body.body--serp .cw {
+  max-width: 100%;
+}
+body.body--serp #links_wrapper {
+  padding-left: 0;
+}
+body.body--serp .footer {
+  text-align: center;
+  padding-left: 0;
+}
+/* HASKELL WIKI */
+body.js-enabled {
+  background-color: #999;
+}
