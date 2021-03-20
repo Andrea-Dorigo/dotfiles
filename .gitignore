@@ -3,3 +3,4 @@
 !.config/qutebrowser/
 !.config/qutebrowser/**
 !.config/xmobar/**
+!bin/**
