@@ -1,0 +1,7 @@
+import XMonad
+
+main = xmonad def
+    { terminal = "terminator"
+    
+    , borderWidth = 3
+    }
