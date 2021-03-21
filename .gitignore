@@ -7,3 +7,4 @@
 !.zsh/**
 !.config/kitty/**
 !.atom/projects.cson
+!.xprofile
