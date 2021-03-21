@@ -195,3 +195,5 @@ c.content.user_stylesheets = ['~/.config/qutebrowser/css/andrea.css']
 
 config.bind('x', 'hint links spawn nohup mpv {hint-url}')
 c.content.javascript.can_access_clipboard = True
+
+config.set('url.start_pages', 'https://www.duckduckgo.com')
