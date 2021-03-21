@@ -1,0 +1,29 @@
+[
+  {
+    title: "MyPhotoBlog"
+    paths: [
+      "/home/andrea/Projects/MyPhotoBlog"
+    ]
+    icon: "icon-device-camera"
+    color: "#ff3b8e"
+  }
+  {
+    title: "Jawadruids"
+    paths: [
+      "/home/andrea/Projects/jawadruids"
+    ]
+    icon: "icon-mortar-board"
+    color: "#ffc938"
+  }
+  {
+    title: "Dotfiles"
+    paths: [
+      "/home/andrea/.dotfiles"
+      "/home/andrea/.config/qutebrowser"
+      "/home/andrea/.config/xmobar"
+      "/home/andrea/.xmonad"
+    ]
+    icon: "icon-gear"
+    color: "#db83ed"
+  }
+]
