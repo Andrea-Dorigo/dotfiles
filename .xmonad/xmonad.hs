@@ -16,6 +16,8 @@ import XMonad.Hooks.ManageHelpers
 import System.IO
 import XMonad.Config.Desktop
 import XMonad.Hooks.FadeInactive
+import XMonad.Actions.SpawnOn
+
 
 
 import qualified XMonad.StackSet as W
@@ -42,11 +44,29 @@ myLogHook :: X ()
 myLogHook = fadeInactiveLogHook fadeAmount
     where fadeAmount = 1.0
 
+myStartupHook = do
+  spawn "atom"
+  spawn "telegram-desktop"
+  spawn "discord"
+  spawn "element-desktop"
+
+
+myManageHook = composeAll
+   [  className =? "Atom"           --> doF (W.shift (myWorkspaces !! 1))
+    , className =? "TelegramDesktop"           --> doF (W.shift (myWorkspaces !! 3))
+    , className =? "discord"           --> doF (W.shift (myWorkspaces !! 3))
+    , className =? "Element"           --> doF (W.shift (myWorkspaces !! 3))
+   ]
+
+
+
 main = do
     xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc "
     xmonad $ defaultConfig {
       terminal = "kitty"
     , workspaces = myWorkspaces
+    , startupHook = myStartupHook
+    , manageHook = myManageHook
     , borderWidth = 1
     , layoutHook = myLayout
     , normalBorderColor = "#232831"
