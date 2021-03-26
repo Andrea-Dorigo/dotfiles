@@ -18,6 +18,7 @@ prompt pure
 
 
 alias ls='ls --color=always'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 #alias qutebrowser='python3 ~/.local/share/qutebrowser-2.0.2/qutebrowser.py &'
 
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig
