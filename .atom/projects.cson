@@ -8,9 +8,9 @@
     color: "#ff3b8e"
   }
   {
-    title: "Jawadruids"
+    title: "Gathering Detection Platform"
     paths: [
-      "/home/andrea/Projects/jawadruids"
+      "/home/andrea/Projects/gathering-detection-platform"
     ]
     icon: "icon-mortar-board"
     color: "#ffc938"
@@ -22,6 +22,7 @@
       "/home/andrea/.config/qutebrowser"
       "/home/andrea/.config/xmobar"
       "/home/andrea/.xmonad"
+      "/home/andrea/.atom"
     ]
     icon: "icon-gear"
     color: "#db83ed"
