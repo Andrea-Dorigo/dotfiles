@@ -3,11 +3,11 @@ nitrogen --restore &
 
 picom --experimental-backend --vsync &
 
-redshift -l 45.3876:11.7923 & 
+#redshift -l 45.3876:11.7923 & 
 
 sleep 1 && xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Tapping Enabled" 1 &
 xinput set-prop "ETPS/2 Elantech Touchpad" "libinput Natural Scrolling Enabled" 1 & 
 
 #discord --start-minimized &
 
-bluetoothctl power on &
+#bluetoothctl power on &

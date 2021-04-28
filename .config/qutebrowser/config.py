@@ -133,7 +133,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 #   - true
 #   - false
 #   - ask
-config.set('content.notifications', False, 'https://www.javatpoint.com')
+# config.set('content.notifications.enabled', False, 'https://www.javatpoint.com')
 
 # Allow websites to show notifications.
 # Type: BoolAsk
@@ -141,7 +141,7 @@ config.set('content.notifications', False, 'https://www.javatpoint.com')
 #   - true
 #   - false
 #   - ask
-config.set('content.notifications', False, 'https://www.reddit.com')
+# config.set('content.notifications', False, 'https://www.reddit.com')
 
 # Allow websites to register protocol handlers via
 # `navigator.registerProtocolHandler`.
