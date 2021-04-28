@@ -1,10 +1,9 @@
 #!/bin/zsh
 # LICENSE: PUBLIC DOMAIN
 # switch between my layouts
-echo $(setxkbmap -query)
 # If an explicit layout is provided as an argument, use it. Otherwise, select the next layout from
 # the set [us, it, fr].
-    layout=$(setxkbmap -query | awk 'END{print $2}')
+    layout=$(setxkbmap -query | awk '$1{print $2}'| awk 'NR==3')
     case $layout in
         us)
                 setxkbmap it

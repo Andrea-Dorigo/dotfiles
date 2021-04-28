@@ -6,5 +6,5 @@
 
 config_version: 2
 settings:
-  content.pdfjs:
-    global: true
+  content.notifications.enabled:
+    https://www.reddit.com: false

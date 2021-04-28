@@ -34,6 +34,7 @@ myKeys  =
           , ("M-p", spawn "exe=`dmenu-recent-aliases`")
           , ("M-b", spawn "exe=`qutebrowser`")
           , ("M-a", spawn "exe=`atom`")
+          , ("M-l", spawn "exe=`sh ~/bin/layout_switch.sh`")
           , ("<Print>", spawn "exe=`escrotum -s -C`")
           ]
 

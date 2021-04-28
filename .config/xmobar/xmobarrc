@@ -26,6 +26,7 @@ Config { font = "xft:FiraCode Nerd Font Mono:weight=medium:pixelsize=11:antialia
                     , Run Date "<fn=2>\xf783</fn> %A %b %_d" "date" 600
                     , Run Date "<fn=1>\xf017</fn> %I:%M %p" "time" 50
                     , Run Com "/bin/sh" ["-c", "~/bin/weather.sh" ] "customweather" 50
+                    , Run Com "/bin/sh" ["-c", "~/bin/which_layout.sh" ] "keyboardlayout" 10
                     , Run StdinReader
                     , Run Volume "default" "Master" ["-t", "<fn=1>\xf028</fn> <volume>% <status>", "--","-C","#5af78e"] 10
                     ]
@@ -34,4 +35,4 @@ Config { font = "xft:FiraCode Nerd Font Mono:weight=medium:pixelsize=11:antialia
        , alignSep = "}{"
        , template = "    <fc=#f3f99d>%cpu%</fc> | <fc=#f3f99d>%memory%</fc> | <fc=#f3f99d>%disku%</fc> |  <fc=#ff6ac1>%wi%</fc> |  <fc=#5af78e>%default:Master%</fc> | %StdinReader% }\
                     \ <fc=#9aedfe>%time%</fc> \
-                    \{ <fc=#9aedfe>%dynnetwork%</fc> | <fc=#ff5c57>%date%</fc> | <fc=#57c7ff>%customweather%</fc>    "
+                    \{ <fc=#9aedfe>%dynnetwork%</fc> | <fc=#fcb221>%keyboardlayout%</fc> | <fc=#ff5c57>%date%</fc> | <fc=#57c7ff>%customweather%</fc>    "
