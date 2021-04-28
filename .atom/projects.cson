@@ -23,6 +23,7 @@
       "/home/andrea/.config/xmobar"
       "/home/andrea/.xmonad"
       "/home/andrea/.atom"
+      "/home/andrea/.config/redshift"
     ]
     icon: "icon-gear"
     color: "#db83ed"
