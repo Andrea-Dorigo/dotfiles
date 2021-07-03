@@ -1,20 +1,28 @@
 [
-  {
-    title: "MyPhotoBlog"
-    paths: [
-      "/home/andrea/Projects/MyPhotoBlog"
-    ]
-    icon: "icon-device-camera"
-    color: "#ff3b8e"
-  }
-  {
-    title: "Gathering Detection Platform"
-    paths: [
-      "/home/andrea/Projects/gathering-detection-platform"
-    ]
-    icon: "icon-mortar-board"
-    color: "#ffc938"
-  }
+    {
+      title: "Kafka-EAI"
+      paths: [
+        "/home/andrea/Projects/kafka-EAI"
+      ]
+      icon: "icon-mortar-board"
+      color: "#ffc938"
+    }
+  # {
+  #   title: "MyPhotoBlog"
+  #   paths: [
+  #     "/home/andrea/Projects/MyPhotoBlog"
+  #   ]
+  #   icon: "icon-device-camera"
+  #   color: "#ff3b8e"
+  # }
+  # {
+  #   title: "Gathering Detection Platform"
+  #   paths: [
+  #     "/home/andrea/Projects/gathering-detection-platform"
+  #   ]
+  #   icon: "icon-mortar-board"
+  #   color: "#ffc938"
+  # }
   {
     title: "Dotfiles"
     paths: [
