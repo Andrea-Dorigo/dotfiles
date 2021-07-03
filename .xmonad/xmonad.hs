@@ -23,7 +23,7 @@ import XMonad.Actions.SpawnOn
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
-myWorkspaces    = ["1","2","3","4","5","6"]
+myWorkspaces    = ["1","2","3","4","5","6","7","8"]
 
 myKeys  =
           [ ("<XF86AudioRaiseVolume>", spawn "pactl set-sink-volume @DEFAULT_SINK@ +2%")
@@ -31,11 +31,13 @@ myKeys  =
           , ("<XF86AudioMute>", spawn "pactl set-sink-mute @DEFAULT_SINK@ toggle")
           , ("<XF86MonBrightnessUp>", spawn "xbacklight -inc 5")
           , ("<XF86MonBrightnessDown>", spawn "xbacklight -dec 5")
+
           , ("M-p", spawn "exe=`dmenu-recent-aliases`")
           , ("M-b", spawn "exe=`qutebrowser`")
           , ("M-a", spawn "exe=`atom`")
-          , ("M-l", spawn "exe=`sh ~/bin/layout_switch.sh`")
+          , ("C-i", spawn "exe=`sh ~/bin/layout_switch.sh`")
           , ("<Print>", spawn "exe=`escrotum -s -C`")
+          , ("C-<Print>", spawn "exe=`escrotum -s`")
           ]
 
 myLayout =
@@ -49,14 +51,12 @@ myStartupHook = do
   spawn "atom"
   spawn "telegram-desktop"
   spawn "discord"
-  spawn "element-desktop"
 
 
 myManageHook = composeAll
    [  className =? "Atom"           --> doF (W.shift (myWorkspaces !! 1))
     , className =? "TelegramDesktop"           --> doF (W.shift (myWorkspaces !! 3))
     , className =? "discord"           --> doF (W.shift (myWorkspaces !! 3))
-    , className =? "Element"           --> doF (W.shift (myWorkspaces !! 3))
    ]
 
 
