@@ -19,6 +19,7 @@ import XMonad.Hooks.FadeInactive
 import XMonad.Actions.SpawnOn
 
 import XMonad.Layout.IndependentScreens
+import XMonad.Layout.NoBorders
 
 
 
@@ -49,10 +50,11 @@ myKeys  =
 -- myLayout =
 --   spacingRaw False (Border 30 15 15 15) True (Border 15 15 15 15) True $ layoutHook def ||| Tall 1 (3/100) (1/2) ||| Full
 
-myLayout = tall ||| full
+myLayout = tall ||| full ||| tallnoborders
   where
      tall = spacingRaw False (Border 30 15 15 15) True (Border 15 15 15 15) True $ Tall 1 (3/100) (1/2)
-     full = Full
+     full = noBorders Full
+     tallnoborders = noBorders $ Tall 1 (3/100) (1/2)
 
 myLogHook :: X ()
 myLogHook = fadeInactiveLogHook fadeAmount
