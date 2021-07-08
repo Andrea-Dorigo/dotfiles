@@ -22,6 +22,7 @@ prompt pure
 alias ls='ls --color=always'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias chrome="google-chrome-stable --force-device-scale-factor=0.8 &"
+alias cat="bat --paging=never"
 #alias qutebrowser='python3 ~/.local/share/qutebrowser-2.0.2/qutebrowser.py &'
 
 #PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig
