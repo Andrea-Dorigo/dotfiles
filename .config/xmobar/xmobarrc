@@ -5,7 +5,7 @@ Config { font = "xft:FiraCode Nerd Font Mono:weight=medium:pixelsize=11:antialia
        , bgColor = "#2A313E"
        , fgColor = "#90BEBD"
        , alpha = 255
-       , position = Static { xpos = 20 , ypos = 10, width = 1880, height = 22 }
+       , position = Static { xpos = 30 , ypos = 10, width = 1860, height = 22 }
        , textOffset = 15
        , textOffsets = [16,15]
        , iconOffset = 0
