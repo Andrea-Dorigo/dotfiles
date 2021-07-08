@@ -18,12 +18,18 @@ import XMonad.Config.Desktop
 import XMonad.Hooks.FadeInactive
 import XMonad.Actions.SpawnOn
 
+import XMonad.Layout.IndependentScreens
+
+
 
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
 myWorkspaces    = ["1","2","3","4","5","6","7","8"]
+
+-- myConfig = def { workspaces = withScreens 2 ["web", "email", "irc"] }
+
 
 myKeys  =
           [ ("<XF86AudioRaiseVolume>", spawn "pactl set-sink-volume @DEFAULT_SINK@ +2%")
@@ -40,8 +46,13 @@ myKeys  =
           , ("C-<Print>", spawn "exe=`escrotum -s`")
           ]
 
-myLayout =
-  spacingRaw False (Border 30 15 15 15) True (Border 15 15 15 15) True $ layoutHook def
+-- myLayout =
+--   spacingRaw False (Border 30 15 15 15) True (Border 15 15 15 15) True $ layoutHook def ||| Tall 1 (3/100) (1/2) ||| Full
+
+myLayout = tall ||| full
+  where
+     tall = spacingRaw False (Border 30 15 15 15) True (Border 15 15 15 15) True $ Tall 1 (3/100) (1/2)
+     full = Full
 
 myLogHook :: X ()
 myLogHook = fadeInactiveLogHook fadeAmount
