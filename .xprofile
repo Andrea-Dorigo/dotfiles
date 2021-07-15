@@ -1,5 +1,8 @@
 
-nitrogen --restore &
+#nitrogen --restore &
+
+#feh --bg-scale /Pictures/Wallpapers/macos_nordified.jpg &
+feh --no-fehbg --bg-scale '/home/andread/Pictures/Wallpapers/macos_nordified.jpg' &
 
 picom --experimental-backend --vsync &
 
