@@ -194,6 +194,17 @@ c.colors.webpage.preferred_color_scheme = 'dark'
 c.content.user_stylesheets = ['~/.config/qutebrowser/css/andrea.css']
 
 config.bind('x', 'hint links spawn nohup mpv {hint-url}')
+config.bind('<Ctrl-1>', 'tab-focus 1')
+config.bind('<Ctrl-2>', 'tab-focus 2')
+config.bind('<Ctrl-3>', 'tab-focus 3')
+
 c.content.javascript.can_access_clipboard = True
 
 config.set('url.start_pages', 'https://www.duckduckgo.com')
+
+c.input.insert_mode.auto_load = True
+
+
+
+config.source('nord-qutebrowser.py')
+
