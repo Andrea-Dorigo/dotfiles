@@ -194,9 +194,16 @@ c.colors.webpage.preferred_color_scheme = 'dark'
 c.content.user_stylesheets = ['~/.config/qutebrowser/css/andrea.css']
 
 config.bind('x', 'hint links spawn nohup mpv {hint-url}')
-config.bind('<Ctrl-1>', 'tab-focus 1')
-config.bind('<Ctrl-2>', 'tab-focus 2')
-config.bind('<Ctrl-3>', 'tab-focus 3')
+config.bind('<Ctrl-1>', 'tab-select 1')
+config.bind('<Ctrl-2>', 'tab-select 2')
+config.bind('<Ctrl-3>', 'tab-select 3')
+config.bind('<Ctrl-4>', 'tab-select 4')
+config.bind('<Ctrl-5>', 'tab-select 5')
+config.bind('<Ctrl-6>', 'tab-select 6')
+config.bind('<Ctrl-7>', 'tab-select 7')
+config.bind('<Ctrl-8>', 'tab-select 8')
+config.bind('<Ctrl-9>', 'tab-select 9')
+
 
 c.content.javascript.can_access_clipboard = True
 

@@ -3,9 +3,10 @@
 } */
 
 /* DUCKDUCKGO */
-body > div.footer > div.footer__left > div > a, html, body, .body--home, .site-wrapper, .region__body, .badge-link, .module--carousel__image-wrapper, .result__image, .vertical--map__sidebar, .vertical--map__sidebar__header, .page-chrome_newtab, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded .metabar:not(.is-stuck)  {
+body > div.footer > div.footer__left > div > a, body.body--home, .site-wrapper, .region__body, .badge-link, .module--carousel__image-wrapper, .result__image, .vertical--map__sidebar, .vertical--map__sidebar__header, .page-chrome_newtab, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded .metabar:not(.is-stuck)  {
  background-color: #282c34;
 }
+
 #rld-1, #rld-2 > a, #rld-1 > a, .module:not(.module--carousel):not(.module--placeholder):not(.module--images):not(.module--translations), .modal--popout .modal__box, .modal__box, .sidebar-modules .module, .results--main .result:not(.result--ad).highlight, .module .module--carousel__item, .user-loc-cta, .address-detail, .modal--dropdown.modal--popout .modal__box, .tile--info, .place-detail, .badge-link, .is-atb-fullbleed .content-info__item, .atb-banner__bottom, .multi-step-mobile-onboarding__step__content, .is-mobile .results_links_deep, .is-mobile .results_links, .is-mobile .result--news, .is-mobile .related-searches, .most-visited__info-tt, .user-loc-tooltip , #links_wrapper > div.results--main > div.search-filters-wrap > div > div.dropdown.dropdown--region.is-active.has-inactive-region > div, .search--home, .search--header , .module--translations .dropdown--translation-select, .module--translations .module--translations-translatedtext, .module--translations .module--translations-length {
  background-color: #393f4a;
 }
