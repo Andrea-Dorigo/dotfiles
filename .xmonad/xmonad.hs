@@ -77,8 +77,7 @@ myManageHook = composeAll
 main = do
     xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc "
     xmonad $ ewmh defaultConfig {
-      terminal = "kitty"
-    , handleEventHook def <+> fullscreenEventHook 
+      terminal = "kitty" 
     , workspaces = myWorkspaces
     , startupHook = myStartupHook
     , manageHook = myManageHook
