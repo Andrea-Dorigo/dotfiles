@@ -20,7 +20,7 @@ import XMonad.Actions.SpawnOn
 
 import XMonad.Layout.IndependentScreens
 import XMonad.Layout.NoBorders
-
+import XMonad.Hooks.EwmhDesktops
 
 
 
@@ -39,7 +39,7 @@ myKeys  =
           , ("<XF86MonBrightnessUp>", spawn "xbacklight -inc 5")
           , ("<XF86MonBrightnessDown>", spawn "xbacklight -dec 5")
 
-          , ("M-p", spawn "exe=`dmenu-recent-aliases`")
+          , ("M-p", spawn "exe=`dmenu_run`")
           , ("M-b", spawn "exe=`qutebrowser`")
           , ("M-a", spawn "exe=`atom`")
           , ("C-i", spawn "exe=`sh ~/bin/layout_switch.sh`")
@@ -76,8 +76,9 @@ myManageHook = composeAll
 
 main = do
     xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc "
-    xmonad $ defaultConfig {
+    xmonad $ ewmh defaultConfig {
       terminal = "kitty"
+    , handleEventHook def <+> fullscreenEventHook 
     , workspaces = myWorkspaces
     , startupHook = myStartupHook
     , manageHook = myManageHook

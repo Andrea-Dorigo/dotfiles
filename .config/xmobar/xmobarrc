@@ -22,7 +22,7 @@ Config { font = "xft:FiraCode Nerd Font Mono:weight=medium:pixelsize=11:antialia
                     , Run Memory ["-t","<fn=1>\xf538</fn> <usedratio>%"] 20
                     , Run DiskU [("/", "<fn=1>\xf0a0</fn> <used>"), ("-d","1"), ("sda5", "<usedbar>")]
                                 ["-L", "20", "-H", "50", "-m", "1", "-p", "3", "-d", "1"]
-                                 600
+                                 50
                     , Run Date "<fn=2>\xf783</fn> %A %b %_d" "date" 600
                     , Run Date "<fn=1>\xf017</fn> %I:%M %p" "time" 50
                     , Run Com "/bin/sh" ["-c", "~/bin/weather.sh" ] "customweather" 50

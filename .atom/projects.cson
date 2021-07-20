@@ -2,7 +2,7 @@
     {
       title: "Kafka-EAI"
       paths: [
-        "/home/andrea/Projects/kafka-EAI"
+        "/home/andread/Projects/kafka-EAI"
       ]
       icon: "icon-mortar-board"
       color: "#ffc938"
@@ -26,12 +26,12 @@
   {
     title: "Dotfiles"
     paths: [
-      "/home/andrea/.dotfiles"
-      "/home/andrea/.config/qutebrowser"
-      "/home/andrea/.config/xmobar"
-      "/home/andrea/.xmonad"
-      "/home/andrea/.atom"
-      "/home/andrea/.config/redshift"
+      "/home/andread/.dotfiles"
+      "/home/andread/.config/qutebrowser"
+      "/home/andread/.config/xmobar"
+      "/home/andread/.xmonad"
+      "/home/andread/.atom"
+      "/home/andread/.config/redshift"
     ]
     icon: "icon-gear"
     color: "#db83ed"
