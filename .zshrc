@@ -43,7 +43,7 @@ setopt HIST_REDUCE_BLANKS  # remove unnecessary blanks
 setopt INC_APPEND_HISTORY_TIME  # append command to history file immediately after execution
 setopt EXTENDED_HISTORY  # record command start time
 
-
+export PATH=$PATH:/usr/local/spark/bin
 
 alias ls='ls --color=always'
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
@@ -272,3 +272,5 @@ function mzc_termsupport_preexec {
 autoload -U add-zsh-hook
 add-zsh-hook precmd mzc_termsupport_precmd
 add-zsh-hook preexec mzc_termsupport_preexec
+
+cbonsai -p

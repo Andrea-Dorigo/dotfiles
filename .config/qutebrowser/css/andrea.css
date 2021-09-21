@@ -1,7 +1,9 @@
 /* html > body {
  zoom: 80%;
 } */
-
+html {
+ scroll-behavior: smooth;
+}
 /* DUCKDUCKGO */
 body > div.footer > div.footer__left > div > a, body.body--home, .site-wrapper, .region__body, .badge-link, .module--carousel__image-wrapper, .result__image, .vertical--map__sidebar, .vertical--map__sidebar__header, .page-chrome_newtab, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded, .zci--type--tiles:not(.is-fallback).is-full-page.is-expanded .metabar:not(.is-stuck)  {
  background-color: #282c34;

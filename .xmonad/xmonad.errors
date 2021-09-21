@@ -1,5 +1,8 @@
 
-xmonad.hs:81:23: error: parse error on input ‘def’
+xmonad.hs:79:15: warning: [-Wdeprecations]
+    In the use of ‘defaultConfig’
+    (imported from XMonad, but defined in XMonad.Config):
+    Deprecated: "Use def (from Data.Default, and re-exported by XMonad and XMonad.Config) instead."
    |
-81 |     , handleEventHook def <+> fullscreenEventHook 
-   |                       ^^^
+79 |     xmonad $  defaultConfig {
+   |               ^^^^^^^^^^^^^

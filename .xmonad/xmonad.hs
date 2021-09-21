@@ -20,7 +20,7 @@ import XMonad.Actions.SpawnOn
 
 import XMonad.Layout.IndependentScreens
 import XMonad.Layout.NoBorders
-import XMonad.Hooks.EwmhDesktops
+-- import XMonad.Hooks.EwmhDesktops
 
 
 
@@ -63,21 +63,21 @@ myLogHook = fadeInactiveLogHook fadeAmount
 myStartupHook = do
   spawn "atom"
   spawn "telegram-desktop"
-  spawn "discord"
+  -- spawn "discord"
 
 
 myManageHook = composeAll
-   [  className =? "Atom"           --> doF (W.shift (myWorkspaces !! 1))
-    , className =? "TelegramDesktop"           --> doF (W.shift (myWorkspaces !! 3))
-    , className =? "discord"           --> doF (W.shift (myWorkspaces !! 3))
+   [  className =? "TelegramDesktop"           --> doF (W.shift (myWorkspaces !! 3))
+   , className =? "Atom"           --> doF (W.shift (myWorkspaces !! 1))
+--    , className =? "discord"           --> doF (W.shift (myWorkspaces !! 3))
    ]
 
 
 
 main = do
     xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc "
-    xmonad $ ewmh defaultConfig {
-      terminal = "kitty" 
+    xmonad $  defaultConfig {
+      terminal = "kitty"
     , workspaces = myWorkspaces
     , startupHook = myStartupHook
     , manageHook = myManageHook

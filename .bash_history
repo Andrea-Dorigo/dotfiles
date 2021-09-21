@@ -341,3 +341,135 @@ history | grep zsh
 date
 timedatectl
 du -h  ~/.nano/*.nanorc
+ping 8.8.8.
+ping 8.8.8.8
+sudo
+sudo su
+su
+sudo
+sudo pacman -Sy git
+sudo visudo
+su
+sudo 
+sudo pacman -Syu
+root
+su
+sudo pacman -Sy
+sudo pacman -Sy git
+zsh
+sudo pacman -Sy zsh
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+echo ".cfg" >> .gitignore
+sudo pacman -Sy xmonad xmonad-contrib
+git clone --bare https://github.com/Andrea-Dorigo/dotfiles.git  $HOME/.dotfiles
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+config 
+config checkout
+rm .bash_history 
+mv .bash_history .bash_history.old
+rm .gitignore
+config checkout
+ls
+ls -a
+ls .config/
+config config --local status.showUntrackedFiles no
+config status
+ls
+cat package_list.txt 
+sudo pacman -Sy zsh 
+sudo pacman -Sy xorg
+cat package_list.txt 
+sudo pacman -Sy xterm
+cat package_list.txt | less
+config diff
+config status
+config status -u
+reboot
+ls
+cat .startx
+startx
+sudo pacman -Sy startx
+sudo pacman -Sy xinit
+ping 8.8.8.8
+sudo pacman -Sy xorg-xinit
+startx
+sudo pacman -Sy xorg-startx
+sudo pacman -Syu
+reboot
+cat .Xprofile
+ls -a
+cat .xprofile 
+xmonad --recompile
+ls
+nano .xmonad/xmonad.hs
+ls
+xmonad --recompile
+nano .xmonad/xmonad.hs
+nano -l .xmonad/xmonad.hs
+sudo pacman -Sy kitty
+xmonad --recompile
+xmonad 
+ls
+cat .xprofile 
+nano .xprofile 
+nano .Xauthority 
+startx
+ls
+ls
+cd .xmonad/
+ls
+cat xmonad.errors 
+./xmonad-x86_64-linux --recompile
+startx ./xmonad-x86_64-linux --recompil
+startx ./xmonad-x86_64-linux --recompile
+startx ./xmonad-x86_64-linux
+ls
+nano .xmonad.hs
+nano xmonad.hs
+sudo pacman -Sy discord atom telegram-desktop
+startx ./xmonad-x86_64-linux --recompile
+startx ./xmonad-x86_64-linux --recompile | less
+startx ./xmonad-x86_64-linux --recompile
+sudo pacman -Sy xf86-video
+sudo pacman -Ss xf86-video
+cd
+cat package_list.txt  | grep intel
+cat package_list2.txt  | grep intel
+cat package_list2.txt  | grep intel
+cat package_list2.txt | grep video
+cat package_list2.txt
+cat package_list2.txt | grep zero
+sudo pacman -Ss xf86-video-intel
+sudo pacman -Sy xf86-video-intel
+ls
+cd .xmonad/
+xinit xmonad-x86_64-linux --recompil
+xinit xmonad-x86_64-linux --recompile
+reboot
+killall xorg
+killall X
+killall Xorg
+killall Xorg
+sudo pacman -Sy feh
+zsh
+cat package_list.txt 
+sudo pacman -Sy zathura zathura-pdf-poppler redshift sxiv unzip visual-studio-code-bin alsa-utils android-tools nerd-fonts-fira-code ncdu maven make light docker docker-compose dmenu
+sudo pacman -Sy zathura zathura-pdf-poppler redshift sxiv unzip alsa-utils android-tools ncdu maven make light docker docker-compose dmenu
+zsh
+zsh
+startx
+picom 
+picom --version
+zsh
+zsh
+ls
+ls
+zsj
+zsh
+zsh
+startx
+startx
+zsh
+netstat -nr | grep '^0\.0\.0\.0' | awk '{print $$2" dockerhost"}' >> /etc/hosts 
+bash -c "netstat -nr | grep '^0\.0\.0\.0' | awk '{print $$2" dockerhost"}' >> /etc/hosts "
+sh

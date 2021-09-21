@@ -1,28 +1,12 @@
 [
-    {
-      title: "Kafka-EAI"
-      paths: [
-        "~/Projects/kafka-EAI"
-      ]
-      icon: "icon-mortar-board"
-      color: "#ffc938"
-    }
-  # {
-  #   title: "MyPhotoBlog"
-  #   paths: [
-  #     "/home/andrea/Projects/MyPhotoBlog"
-  #   ]
-  #   icon: "icon-device-camera"
-  #   color: "#ff3b8e"
-  # }
-  # {
-  #   title: "Gathering Detection Platform"
-  #   paths: [
-  #     "/home/andrea/Projects/gathering-detection-platform"
-  #   ]
-  #   icon: "icon-mortar-board"
-  #   color: "#ffc938"
-  # }
+  {
+    title: "Kafka-EAI"
+    paths: [
+      "~/Projects/kafka-EAI"
+    ]
+    icon: "icon-mortar-board"
+    color: "#ffc938"
+  }
   {
     title: "Dotfiles"
     paths: [
@@ -36,4 +20,20 @@
     icon: "icon-gear"
     color: "#db83ed"
   }
+  {
+    title: "Tesi di Laurea"
+    paths: [
+      "/home/adorigo/Projects/tesi-di-laurea"
+    ]
+    icon: "icon-mortar-board"
+    color: "#970215"
+  }
+    {
+      title: "SITA-APOC"
+      paths: [
+        "/home/adorigo/Projects/sita-apoc"
+      ]
+      icon: "icon-rocket"
+      color: "#0095DA"
+    }
 ]

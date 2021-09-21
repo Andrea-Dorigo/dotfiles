@@ -7,4 +7,8 @@
 config_version: 2
 settings:
   content.media.audio_capture:
-    https://meet.google.com: false
+    https://meet.google.com: true
+  content.media.audio_video_capture:
+    https://meet.google.com: true
+  content.media.video_capture:
+    https://meet.google.com: true
