@@ -18,6 +18,12 @@ Config { font = "xft:FiraCode Nerd Font Mono:weight=medium:pixelsize=11:antialia
        , overrideRedirect = True
        , commands = [ Run Wireless "" ["-t","<fn=2>\xf1eb</fn> <ssid>"] 10
                     , Run DynNetwork ["-t","<rx> <tx>","-S","True"] 10
+                    , Run  BatteryP ["BAT1"]
+                 ["-t", "<acstatus>"
+                 , "-L", "10", "-H", "80"
+                 , "-l", "red", "-h", "green"
+                 , "--", "-O", "Charging", "-o", "Battery: <left>%"
+                 ] 300
                     , Run Cpu ["-t","<fn=1>\xf2db</fn> <total>%","-L","3","-H","50","--high","red"] 20
                     , Run Memory ["-t","<fn=1>\xf538</fn> <usedratio>%"] 20
                     , Run DiskU [("/", "<fn=1>\xf0a0</fn> <used>"), ("-d","1"), ("sda5", "<usedbar>")]
@@ -35,4 +41,4 @@ Config { font = "xft:FiraCode Nerd Font Mono:weight=medium:pixelsize=11:antialia
        , alignSep = "}{"
        , template = "    <fc=#f3f99d>%cpu%</fc> | <fc=#f3f99d>%memory%</fc> | <fc=#f3f99d>%disku%</fc> |  <fc=#ff6ac1>%wi%</fc> |  <fc=#5af78e>%default:Master%</fc> | %StdinReader% }\
                     \ <fc=#9aedfe>%time%</fc> \
-                    \{ <fc=#9aedfe>%dynnetwork%</fc> | <fc=#fcb221>%keyboardlayout%</fc> | <fc=#ff5c57>%date%</fc> | <fc=#57c7ff>%customweather%</fc>    "
+                    \{ <fc=#9aedfe>%dynnetwork%</fc> | %battery% | <fc=#fcb221>%keyboardlayout%</fc> | <fc=#ff5c57>%date%</fc> | <fc=#57c7ff>%customweather%</fc>    "

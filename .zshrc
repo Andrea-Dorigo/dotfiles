@@ -46,7 +46,7 @@ setopt EXTENDED_HISTORY  # record command start time
 export PATH=$PATH:/usr/local/spark/bin
 
 alias ls='ls --color=always'
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME'
 #alias chrome="google-chrome-stable --force-device-scale-factor=0.8 &"
 alias cat="bat --paging=never"
 #alias chromium="chromium --force-device-scale-factor=0.8 &"
@@ -273,4 +273,4 @@ autoload -U add-zsh-hook
 add-zsh-hook precmd mzc_termsupport_precmd
 add-zsh-hook preexec mzc_termsupport_preexec
 
-cbonsai -p
+#cbonsai -p

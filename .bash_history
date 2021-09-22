@@ -1,34 +1,3 @@
-ls
-pacman -S networkmanager
-sudo pacman -S networkmanager
-pacman -Syu
-sudo pacman -Syu
-nano /etc/pacman.d/mirrorlist 
-sudo nano /etc/pacman.d/mirrorlist 
-sudo pacman -Syyu
-ping 8.8.8.8
-nmcli
-sudo nmcli
-iwctl
-zsh
-which zsh
-which ls
-ls
-ls
-ls -a
-cd /usr/bin/
-ls
-ls | grep iwd
-cd
-ip
-netc
-cd /etc/netctl/
-cp ./examples/ethernet-dhcp ./custom-wired-profile
-sudo cp ./examples/ethernet-dhcp ./custom-wired-profile
-ls
-netctl start custom-wired-profile 
-sudo netctl start custom-wired-profile 
-ip link
 nano custom-wired-profile 
 sudo nano custom-wired-profile 
 sudo netctl start custom-wired-profile 
@@ -473,3 +442,59 @@ zsh
 netstat -nr | grep '^0\.0\.0\.0' | awk '{print $$2" dockerhost"}' >> /etc/hosts 
 bash -c "netstat -nr | grep '^0\.0\.0\.0' | awk '{print $$2" dockerhost"}' >> /etc/hosts "
 sh
+echo 'alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"' >> $HOME/.zshrc
+echo 'alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME"' >> $HOME/.bashrc 
+source .zshrc 
+cat .gitignore 
+git clone --bare https://github.com/Andrea-Dorigo/dotfiles.git
+dotfiles checkout 
+git clone --bare https://github.com/Andrea-Dorigo/dotfiles.git $HOME/.dotfiles.git
+sudo rm -r dotfiles.git/
+ls .dotfiles.git/
+dotfiles checkout
+mv .Xauthority .Xauthority.bak
+clear
+dotfiles checkout
+mv .atom/projects.cson .atom/projects.cson.bak
+mv .bash_history .bash_history.bak
+rm .config/qutebrowser/bookmarks/urls 
+rm .config/qutebrowser/qsettings/QtProject.conf 
+rm .config/qutebrowser/quickmarks 
+cat .gitignore 
+mv .gitignore .gitignore.bak
+mv .xinitrc .xinitrc.bak
+rm .xmonad/xmonad-x86_64-linux .xmonad/xmonad.errors .xmonad/xmonad.hi .xmonad/xmonad.hs .xmonad/xmonad.o .zshrc 
+dotfiles checkout
+cat .xmonad/xmonad.hs
+cd Projects/tesi-di-laurea/
+git status
+git push
+kitty 
+cd
+cat .xinitrc
+cat .Xauthority
+kitty 
+sudo pacman -Sy discord
+discord 
+clear
+cat $
+nano .bashrc 
+kitty 
+ls
+bash
+zsh
+history | grep it
+cat .bash_history.bak 
+zsh
+zsh
+zsh
+zsh
+chsh -s ${which zsh}
+chsh -s ${which zsh}
+which zsh
+chsh -s ${which zsh}
+zsh
+xinit 
+startx
+startx 
+zsh
